@@ -1,7 +1,7 @@
 package data.structures.and.algorithms;
 
 public class MyStack {
-    private SNode head;
+    private SNode top;
 
     private static class SNode{
         private int data;
@@ -14,9 +14,16 @@ public class MyStack {
 
 
     public boolean isEmpty() {
-        if (this.head == null) {
+        if (this.top == null) {
             return true;
         }
         else {return false;}
+    }
+
+    public void push(int data){
+        SNode newNode = new SNode(data);
+
+        newNode.next = top;
+        top = newNode;
     }
 }

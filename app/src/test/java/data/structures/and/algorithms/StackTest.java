@@ -23,7 +23,15 @@ public class StackTest {
     void newStackShouldBeEmpty(){
         boolean expected = true;
         boolean actual = testStack.isEmpty();
-
         assertEquals(expected, actual);
     }
+
+    @Test
+    void stackShouldNotBeEmptyAfterNodeAdded(){
+        boolean expected = false;
+        testStack.push(5);
+        boolean actual = testStack.isEmpty();
+        assertEquals(expected, actual);
+    }
+
 }
