@@ -34,4 +34,13 @@ public class StackTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void peekShouldReturnTopElementInStackWithoutRemoving(){
+        int expected = 5;
+        testStack.push(5);
+        int actual = testStack.peek();
+        assertEquals(expected, actual);
+        assertEquals(false, testStack.isEmpty());
+    }
+
 }

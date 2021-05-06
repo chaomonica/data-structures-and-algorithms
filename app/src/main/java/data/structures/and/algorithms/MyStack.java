@@ -26,4 +26,8 @@ public class MyStack {
         newNode.next = top;
         top = newNode;
     }
+
+    public int peek() {
+        return this.top.data;
+    }
 }
