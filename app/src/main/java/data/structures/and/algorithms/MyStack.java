@@ -23,11 +23,17 @@ public class MyStack {
     public void push(int data){
         SNode newNode = new SNode(data);
 
-        newNode.next = top;
-        top = newNode;
+        newNode.next = this.top;
+        this.top = newNode;
     }
 
     public int peek() {
         return this.top.data;
+    }
+
+    public int pop(){
+        int data = this.top.data;
+        this.top = top.next;
+        return data;
     }
 }
