@@ -1,4 +1,4 @@
-package data.structures.and.algorithms;
+package data.structures.and.algorithms.stackAndQueue;
 
 public class Queue {
     private static class QNode {

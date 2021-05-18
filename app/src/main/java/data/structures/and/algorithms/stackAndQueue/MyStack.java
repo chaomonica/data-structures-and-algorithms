@@ -1,4 +1,4 @@
-package data.structures.and.algorithms;
+package data.structures.and.algorithms.stackAndQueue;
 
 public class MyStack {
     private SNode top;
